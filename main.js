@@ -12,6 +12,15 @@
 
 //     console.log("ready!");
 // });
+// border-bottom: 1px solid black;
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();    
+    if (scroll >= 90) {
+        $(".navbar").css("border-bottom", "1px solid lightgrey");
+    } else {
+        $(".navbar").css("border-bottom", "none");
+    }; 
+});
 
 $("#expand").click(function () {    
     $('#right').css("background-color", "black");

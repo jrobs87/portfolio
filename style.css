@@ -68,6 +68,7 @@ button:focus {
     padding: 5em 0 0 0;
     width: calc(100% - 8em);
     height: 2000px;
+    
 }
 
 .content-body {
@@ -78,24 +79,27 @@ button:focus {
 }
 
 header {
-    /* background: lightcoral; */
+    background: lightcoral;
     width: inherit;
     margin: auto;
     position: fixed;
     top: 0;
-    height: 3em;
-    background: white;
+    /* height: 5em; */
     opacity: 0.95;
     z-index: 1;
 }
 
 .navbar {
     background: white;
+    /* transition-timing-function: ease-in-out; */
+    transition-duration: 0s;
+    transition-delay: 0.1s;
 }
 
 .navbar-brand {
     font-family: 'geoMed';
     font-size: 2em;
+    
 }
 
 .nav-item {
@@ -112,9 +116,9 @@ header {
     transition-duration: 0.15s;
 }
 
-.active {
-    border-bottom: 2px solid #1455C2;
-}
+/* .active {
+    border:1px solid #1455C2;
+} */
 
 .sidebar {
     text-align: center;
@@ -175,9 +179,10 @@ header {
 }
 
 .test {
-    background-image: url(frog.jpg);
+    /* background-image: url(birby.png); */
     background-size: cover;
     background-position-y: center;
+    /* background-position-x: right; */
 }
 
 /* // Extra small devices (portrait phones, less than 576px)
