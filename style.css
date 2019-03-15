@@ -14,8 +14,8 @@
 }
 
 @font-face {
-    font-family: geoBlack;
-    src: url('geomanist-black-webfont.woff');
+    font-family: geoExLight;
+    src: url('geomanist-extralight-webfont.woff');
 }
 
 body {
@@ -58,7 +58,7 @@ button:focus {
 
 .outer {
     font-family: 'geoUltra';
-    font-size: 3em;
+    font-size: 3.5em;
     margin-left: .1em;
     margin-right: .1em;
 }
@@ -79,7 +79,6 @@ button:focus {
 }
 
 header {
-    background: lightcoral;
     width: inherit;
     margin: auto;
     position: fixed;
@@ -87,6 +86,10 @@ header {
     /* height: 5em; */
     opacity: 0.95;
     z-index: 1;
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 .navbar {
@@ -108,7 +111,7 @@ header {
 
 .nav-link {
     /* font-family: 'geoMed'; */
-    font-size: 1.3em;
+    font-size: 1.0em;
 }
 
 .collapsing {
@@ -116,9 +119,9 @@ header {
     transition-duration: 0.15s;
 }
 
-/* .active {
-    border:1px solid #1455C2;
-} */
+.active {
+    border-bottom: 1px solid #1455C2;
+}
 
 .sidebar {
     text-align: center;
@@ -155,6 +158,10 @@ header {
     /* height: 100vh; */
 }
 
+.socialIconButton:hover {
+    color: #1455C2;
+}
+
 #close {
     background: none;
     border: none;
@@ -182,6 +189,7 @@ header {
     /* background-image: url(birby.png); */
     background-size: cover;
     background-position-y: center;
+    font-family: 'geoExLight'
     /* background-position-x: right; */
 }
 
