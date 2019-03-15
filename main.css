@@ -1,0 +1,141 @@
+@font-face {
+  font-family: geoLight;
+  src: url('geomanist-light-webfont.woff');
+}
+
+@font-face {
+  font-family: geoUltra;
+  src: url('geomanist-ultra-webfont.woff');
+}
+
+@font-face {
+  font-family: geoMed;
+  src: url('geomanist-medium-webfont.woff');
+}
+
+@font-face {
+  font-family: geoBlack;
+  src: url('geomanist-black-webfont.woff');
+}
+
+/* Look up how to tidy the fontface rules */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: 'geoLight';
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.splash {
+  color: lightseagreen;
+  font-family: 'geoMed';
+}
+
+.navbar-brand {
+  font-family: 'geoMed';
+  font-size: 1.5em;
+}
+
+.content-container, .froggy {
+  min-height: 600px;
+  background-image: url(frog.jpg);
+  background-size: cover;
+  background-position: 0;
+}
+
+.footer {
+  position: absolute;
+  padding-left: 1.5em;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  font-size: .75em;
+  /* border: 1px solid black; */
+}
+
+.footerContent {
+text-align: center;
+}
+
+.content {
+  color: black;
+  /* background-image: url(/assets/img/osman-rana-293978-unsplash.jpg) */
+}
+
+.fab, .far {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 1em;
+  /* padding: 1em; */
+}
+
+.fab:hover, .far:hover {
+  color: lightseagreen;
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+}
+
+.iconContainer {
+  position: fixed;
+  bottom: 5em;
+  right: 1.5em;
+  text-align: center;
+} 
+
+#test {
+  margin: 2em 0 0 0;
+  background-size: cover;
+}
+
+.jumbotron {
+  background: none;
+}
+
+.hvr-sweep-to-right {
+  background: black;
+  border: none;
+  font-size: .75em;
+}
+
+.hvr-sweep-to-right:hover {
+  background: black;
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {}
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {}
+
+/* // Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
+
+/* // Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width */
