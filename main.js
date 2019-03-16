@@ -15,7 +15,7 @@ $(document).ready(function () {
         navbar = $('header');
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll >= 700) {
+        if (scroll >= 600) {
             $(window).scroll(function () {
                 var a = $(window).scrollTop();
                 var b = navbar.height();
@@ -24,12 +24,12 @@ $(document).ready(function () {
 
                 if (c < currentScrollTop && a > b + b) {
                     navbar.addClass("scrollUp");
-                    $('#right').css("right","-4em");
-                    $('#left').css("left","-4em");
+                    $('#right').css("right", "-4em");
+                    $('#left').css("left", "-4em");
                 } else if (c > currentScrollTop && !(a <= b)) {
                     navbar.removeClass("scrollUp");
-                    $('#right').css("right","0em");
-                    $('#left').css("left","0em");
+                    $('#right').css("right", "0em");
+                    $('#left').css("left", "0em");
                 }
                 c = currentScrollTop;
             })
@@ -76,11 +76,11 @@ $("#close").click(function () {
 
 
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
 }
