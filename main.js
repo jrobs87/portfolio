@@ -72,3 +72,15 @@ $("#close").click(function () {
     console.log('sidebar has been closed'); //every day we commentin'
 });
 // End Expand/Collapse functionality
+
+
+
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
