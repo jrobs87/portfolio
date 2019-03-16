@@ -18,6 +18,10 @@
     src: url('geomanist-extralight-webfont.woff');
 }
 
+html {
+    background: #1455C2;
+}
+
 body {
     font-family: 'geoLight';
     font-size: 1em;
@@ -30,10 +34,6 @@ button:focus {
 .splash {
     color: #1455C2;
 }
-/* .bodyWrapper {
-    width: calc(100% - 3em);
-    padding: 2em;
-} */
 
 #loader {
     z-index: 20;
@@ -42,7 +42,6 @@ button:focus {
     height: 100vh;
     background: #1455C2;
     transition-duration: .5s;
-    /* transition-timing-function: ease-in-out; */
     transition-delay: 0.1s;
     opacity: 1;
 }
@@ -50,10 +49,6 @@ button:focus {
 .loaderContent {
     margin: auto;
     margin-top: 25%;
-}
-
-.loaderText {
-    display: block;
 }
 
 .outer {
@@ -65,10 +60,9 @@ button:focus {
 
 .content-container {
     margin: 0em 4em 0em 4em;
-    padding: 5em 0 0 0;
+    padding: 5em 0 4em 0;
     width: calc(100% - 8em);
-    height: 2000px;
-    
+    /* height: 100vh; */
 }
 
 .content-body {
@@ -84,8 +78,34 @@ header {
     position: fixed;
     top: 0;
     /* height: 5em; */
-    opacity: 0.95;
+    opacity: 0.9;
     z-index: 1;
+    transition-duration: .2s;
+    transition-delay: 0.1s;
+    /* border-bottom: 3px solid lightblue; */
+}
+
+.expandBorder {
+    display: block;
+    margin: auto;
+    width: 0%;
+    margin-top: 0;
+    border-top: 1px solid black;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.scrollUp {
+    transform: translateY(-80px);
+}
+
+.hideRight {
+    color: red;
+}
+
+.hideLeft {
+    transform: translateX(-4em);
 }
 
 .navbar-toggler {
@@ -95,14 +115,11 @@ header {
 .navbar {
     background: white;
     /* transition-timing-function: ease-in-out; */
-    transition-duration: 0s;
-    transition-delay: 0.1s;
 }
 
 .navbar-brand {
     font-family: 'geoMed';
     font-size: 2em;
-    
 }
 
 .nav-item {
@@ -120,15 +137,17 @@ header {
 }
 
 .active {
-    border-bottom: 1px solid #1455C2;
+    font-family: 'geoMed';
 }
 
 .sidebar {
     text-align: center;
     width: 4em;
-    background: white;
     opacity: 0.95;
     height: 100vh;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
 }
 
 .sidebarContent {
@@ -137,29 +156,38 @@ header {
 }
 
 .socialIcon {
+    border-radius: 100%;
     font-size: 1.6em;
-}
-
-.left {
-    position: fixed;
-    left: 0;
-    top: 0
-}
-
-#right {
-    /* width: 3em; */
-    position: fixed;
-    z-index: 11;
-    right: 0;
-    top: 0;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.1s;
-    /* height: 100vh; */
+    background: none;
+    border: none;
 }
 
 .socialIconButton:hover {
-    color: #1455C2;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    color: white;
+}
+
+.socialIcon:hover {
+    border-radius: 100%;
+    color: white;
+    background: #1455C2;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-left: 1.2em;
+}
+
+#right {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
 }
 
 #close {
@@ -173,6 +201,11 @@ header {
     border: none;
 }
 
+.nonExpand {
+    background: none;
+    border: none;
+}
+
 /* contact form here */
 
 #contactForm {
@@ -182,17 +215,15 @@ header {
     margin: auto;
     color: white;
     transition-delay: 0.3s;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
 }
 
 .test {
-    /* background-image: url(birby.png); */
-    background-size: cover;
-    background-position-y: center;
-    font-family: 'geoExLight'
-    /* background-position-x: right; */
+    font-family: 'geoExLight';
+    color: grey;
 }
 
+/* [====================] - BEGIN MEDIA QUERIES - [====================] */
 /* // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
@@ -213,7 +244,29 @@ header {
 @media (min-width: 1200px) {}
 
 @media (max-width: 767px) {
+    /* logo length shorted at this breakpoint.  removes letters to leave "tk.design" */
     .content-to-hide {
         display: none;
     }
 }
+/* [====================] -  MEDIA QUERIES - [====================] */
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+/* [====================] - BEGIN COMPONENT TESTING - [====================] */
+
+/* testing out the switch component for dark mode */
+
+
+
+.devA {
+    background: yellow
+}
+
+.devB {
+    background: lightgreen;
+}
+
+/* [====================] - END COMPONENT TESTING - [====================] */

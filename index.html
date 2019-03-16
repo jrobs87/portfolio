@@ -16,6 +16,7 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 
+    <!-- begin loader animation modal -->
     <script>setTimeout($.proxy(function () {
             $('#loader').css("background-color", "white");
             $('#loader').css("opacity", "0");
@@ -25,12 +26,13 @@
         }), 2500);
         console.log("ready!");
     </script>
+    <!-- end loader animation modal -->
 
-    <title>Hello, world!</title>
+    <title>tk.design web development</title>
 </head>
 
 <body>
-    <!-- Loader begins here -->
+    <!-- begin loader element -->
     <!-- loaded first in the DOM - timeout function triggers this to end after a couple seconds.
     wrapped in the doc.loaded function to make sure it shows before the site shows -->
     <div id="loader">
@@ -45,185 +47,210 @@
             </div>
         </div>
     </div>
+    <!-- end loader element -->
 
-    <div class="bodyWrapper">
-        <div class="sidebar left">
-            <div class="sidebarContent"></div>
+    <!-- begin sidebar left - note this is the 1 of 3 fixed containers-->
+    <div class="sidebar" id="left">
+        <div class="sidebarContent">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="socialIcon"><button class="socialIconButton nonExpand"><i
+                        class="fas fa-plus-circle"></i></button>
+            </div>
         </div>
-        <div class="content-container">
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html">
-                        t<span class="content-to-hide">iktaali</span>k<span class="splash">.</span>design
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="about.html">about<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="demos.html">demos</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link" href="musings.html">musings</a>
-                                </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="hire">hire</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+    </div>
+    <!-- end sidebar left - note this is the 1 of 3 fixed containers-->
 
-            <!-- Central Body Content Begins Here -->
-            <div class="content-body">
+    <!-- [====================] BEGIN CONTENT AND BOOTSTRAP GRID LAYOUTS [====================] -->
+    <!-- begin primary "body" container including header and nav - 2 of 3 fixed containers -->
+    <div class="content-container">
 
-                <!-- begin section -->
-                <div class="container test" style="height: 30em; margin-top: 9em; margin-bottom: 20em;">
-                    <div class="row">
-                        <div class="col-lg-2"></div>
-                        <div class="col-8">                            
-                            <div style="font-size: 1.75em; color: grey">
-                                Less is more. I design with minimalism in mind. <span class="splash">Clean, simple, focused on UX and UI.</span>
-                                Let's remove the clutter and get to the heart of the matter: reaching your customers.
-                                We deliver unparalled design and web development services in the Atlanta area.
-                                Tech should make our lives simpler.  
-                            </div>
-                            <br>
-                            <button type="button" class="btn btn-dark">learn more</button>
-                        </div>
-                        <div class="col-m-2">
-                            
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- begin section -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <p>A year ago Saturday will mark the first anniversary of arguably the greatest
-                                upset of all time.
-
-                                Up until then, no 16 seed in the 80 year history of the NCAA Men's Basketball Tournament
-                                had
-                                ever beaten a number 1 seed. Ever.
-
-                                On March 16, 2018, the underdog UMBC Retrievers defeated the mighty Virginia Cavaliers
-                                74-54 to
-                                earn the unthinkable 16/1 upset win and make history in the process.
-
-                                This weekend, basketball enthusiasts will remember this historic upset and be reminded
-                                that it
-                                is always impossible until it happens.
-
-                                Winning UMBC Coach Ryan Odom shared his blueprint for underdog coaches with Sports
-                                Illustrated
-                                as follows:</p>
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p>A year ago Saturday will mark the first anniversary of arguably the greatest
-                                upset of all time.
-
-                                Up until then, no 16 seed in the 80 year history of the NCAA Men's Basketball Tournament
-                                had
-                                ever beaten a number 1 seed. Ever.
-
-                                On March 16, 2018, the underdog UMBC Retrievers defeated the mighty Virginia Cavaliers
-                                74-54 to
-                                earn the unthinkable 16/1 upset win and make history in the process.
-
-                                This weekend, basketball enthusiasts will remember this historic upset and be reminded
-                                that it
-                                is always impossible until it happens.
-
-                                Winning UMBC Coach Ryan Odom shared his blueprint for underdog coaches with Sports
-                                Illustrated
-                                as follows:</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p>A year ago Saturday will mark the first anniversary of arguably the greatest
-                                upset of all time.
-
-                                Up until then, no 16 seed in the 80 year history of the NCAA Men's Basketball Tournament
-                                had
-                                ever beaten a number 1 seed. Ever.
-
-                                On March 16, 2018, the underdog UMBC Retrievers defeated the mighty Virginia Cavaliers
-                                74-54 to
-                                earn the unthinkable 16/1 upset win and make history in the process.
-
-                                This weekend, basketball enthusiasts will remember this historic upset and be reminded
-                                that it
-                                is always impossible until it happens.
-
-                                Winning UMBC Coach Ryan Odom shared his blueprint for underdog coaches with Sports
-                                Illustrated
-                                as follows:</p>
-                        </div>
-                        <div class="col-md-4">
-                            <p>A year ago Saturday will mark the first anniversary of arguably the greatest
-                                upset of all time.
-
-                                Up until then, no 16 seed in the 80 year history of the NCAA Men's Basketball Tournament
-                                had
-                                ever beaten a number 1 seed. Ever.
-
-                                On March 16, 2018, the underdog UMBC Retrievers defeated the mighty Virginia Cavaliers
-                                74-54 to
-                                earn the unthinkable 16/1 upset win and make history in the process.
-
-                                This weekend, basketball enthusiasts will remember this historic upset and be reminded
-                                that it
-                                is always impossible until it happens.
-
-                                Winning UMBC Coach Ryan Odom shared his blueprint for underdog coaches with Sports
-                                Illustrated
-                                as follows:</p>
-                        </div>
-                    </div>
+        <!-- begin header element and navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    t<span class="content-to-hide">iktaali</span>k<span class="splash">.</span>design
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">about<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="demos.html">demos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="musings.html">musings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hire">hire</a>
+                        </li>
+                    </ul>
 
                 </div>
 
-            </div>
+            </nav>
+            <div class="expandBorder"></div>
+        </header>
+        <!-- end header element and navbar -->
 
-        </div>
-        <div class="sidebar" id="right">
-            <div class="sidebarContent">
-                <div class="socialIcon"></div>
-                <div class="socialIcon"><i class="fab fa-linkedin"></i></div>
-                <div class="socialIcon"><i class="fab fa-instagram"></i></div>
-                <div class="socialIcon"><i class="fab fa-twitter"></i></div>
-                <div class="socialIcon"><button id="expand" class="socialIconButton"><i class="fas fa-envelope"></i></button></div>
-
-            </div>
-            <div class="container">
+        <!-- Begin Central Body Content - actual content goes here -->
+        <div class="content-body">
+            <!-- begin section -->
+            <div class="container-fluid test" style="margin-top: 9em; margin-bottom: 11em;">
                 <div class="row">
-                    <div id="contactForm">
-                        <div>
-                            <h4 style="border-bottom: 1px solid #1455C2; margin-bottom: .5em; padding-bottom: .5em">Let's get in touch.</h4>
-                            <h6>For project inquiries, questions, and feedback, send me a message.</h6>
-                            <div class="socialIcon"><button id="close">close</button></div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <div style="font-size: 2.25em">
+                            <span class="splash" style="font-weight: bold;">Design with minimalism in mind.</span> We believe that tech should make
+                            life simpler.
+                            The user should be enriched yet undistracted. Less
+                            is more.
+                            We deliver focused UX and UI. experiences through <span class="splash" style="font-weight: bold;">web design </span>and
+                            <span class="splash" style="font-weight: bold;">web application development</span> in Atlanta, Georgia.
                         </div>
+                        <br>
+                        <button type="button" class="btn btn-dark">learn more</button>
+                    </div>
+                    <div class="col-m-2">
+                    </div>
+                </div>
+            </div>
+            <!-- end section -->
+
+            <!-- begin section -->
+            <div class="container">
+                <div class="row" style="height: 10em; padding-top: 4em">
+                    <div class="col">
+                        <h1 style="font-family: geoLight; font-size: 3em; text-align: center;">/tɪkˈtɑl.ɪk/</h1>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>A year ago Saturday will mark the first anniversary of arguably the greatest
+                            upset of all time.
+
+                            Up until then, no 16 seed in the 80 year history of the NCAA Men's Basketball Tournament
+                            had
+                            ever beaten a number 1 seed. Ever.
+
+                            On March 16, 2018, the underdog UMBC Retrievers defeated the mighty Virginia Cavaliers
+                            74-54 to
+                            earn the unthinkable 16/1 upset win and make history in the process.
+
+                            This weekend, basketball enthusiasts will remember this historic upset and be reminded
+                            that it
+                            is always impossible until it happens.
+
+                            Winning UMBC Coach Ryan Odom shared his blueprint for underdog coaches with Sports
+                            Illustrated
+                            as follows:</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>A year ago Saturday will mark the first anniversary of arguably the greatest
+                            upset of all time.
+
+                            Up until then, no 16 seed in the 80 year history of the NCAA Men's Basketball Tournament
+                            had
+                            ever beaten a number 1 seed. Ever.
+
+                            On March 16, 2018, the underdog UMBC Retrievers defeated the mighty Virginia Cavaliers
+                            74-54 to
+                            earn the unthinkable 16/1 upset win and make history in the process.
+
+                            This weekend, basketball enthusiasts will remember this historic upset and be reminded
+                            that it
+                            is always impossible until it happens.
+
+                            Winning UMBC Coach Ryan Odom shared his blueprint for underdog coaches with Sports
+                            Illustrated
+                            as follows:</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>A year ago Saturday will mark the first anniversary of arguably the greatest
+                            upset of all time.
+
+                            Up until then, no 16 seed in the 80 year history of the NCAA Men's Basketball Tournament
+                            had
+                            ever beaten a number 1 seed. Ever.
+
+                            On March 16, 2018, the underdog UMBC Retrievers defeated the mighty Virginia Cavaliers
+                            74-54 to
+                            earn the unthinkable 16/1 upset win and make history in the process.
+
+                            This weekend, basketball enthusiasts will remember this historic upset and be reminded
+                            that it
+                            is always impossible until it happens.
+
+                            Winning UMBC Coach Ryan Odom shared his blueprint for underdog coaches with Sports
+                            Illustrated
+                            as follows:</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="birby.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end section -->
+    </div>
+    <!-- end primary "body" container including header and nav - 2 of 3 fixed containers -->
+    <!-- [====================] END CONTENT AND BOOTSTRAP GRID LAYOUTS [====================] -->
+
+    <!-- begin sidebar right with social icons and email modal - 3 of 3 fixed containers-->
+    <div class="sidebar" id="right">
+        <div class="sidebarContent">
+
+            <!-- <div class="socialIcon"><button class="socialIconButton nonExpand"><i class="fab fa-codepen"></i></button>
+            </div> -->
+            <div class="socialIcon"><button class="socialIconButton nonExpand"><i
+                        class="fab fa-github-alt"></i></button>
+            </div>
+            <div class="socialIcon"><button class="socialIconButton nonExpand"><i class="fab fa-linkedin"></i></button>
+            </div>
+            <div class="socialIcon"><button class="socialIconButton nonExpand"><i class="fab fa-instagram"></i></button>
+            </div>
+            <div class="socialIcon"><button class="socialIconButton nonExpand"><i class="fab fa-twitter"></i></button>
+            </div>
+            <div class="socialIcon"><button id="expand" class="socialIconButton"><i
+                        class="far fa-envelope"></i></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div id="contactForm">
+                    <div>
+                        <h4 style="border-bottom: 1px solid #1455C2; margin-bottom: .5em; padding-bottom: .5em">Let's
+                            get in touch.</h4>
+                        <h6>For project inquiries, questions, and feedback, send me a message.</h6>
+                        <div class="field">name</div>
+                        <div class="field">email</div>
+                        <div class="field">message</div>
+                        <div><button id="close">close</button></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- end sidebar right with social icons and email modal - 3 of 3 fixed containers-->
+
 </body>
-<!-- [---------- Game Script ----------] -->
+
+
+<!-- [----------==========] Begin Scripts (except jquery - loaded in header to create loader element) [==========----------] -->
 
 
 <!-- Optional JavaScript -->
@@ -237,6 +264,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+<!-- main script file -->
 <script src="main.js"></script>
 </body>
 
