@@ -1,3 +1,4 @@
+/* BEGIN IMPORTED FONTS VIA @FONT-FACE */
 @font-face {
     font-family: geoLight;
     src: url('geomanist-light-webfont.woff');
@@ -17,30 +18,16 @@
     font-family: geoExLight;
     src: url('geomanist-extralight-webfont.woff');
 }
+/* END IMPORTED FONTS VIA @FONT-FACE */
 
-html {
-    background: #1455C2;
-}
-
-body {
-    font-family: 'geoLight';
-    font-size: 1em;
-}
-
-button:focus {
-    outline: none;
-}
-
-.splash {
-    color: #1455C2;
-}
-
+/* begin loader - note this element loads first in the dom and jquery is enqueued in the head element */
 #loader {
     z-index: 20;
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #1455C2;
+    background: white;
+    color: black;
     transition-duration: .5s;
     transition-delay: 0.1s;
     opacity: 1;
@@ -57,6 +44,36 @@ button:focus {
     margin-left: .1em;
     margin-right: .1em;
 }
+/* end loader - note this element loads first in the dom and jquery is enqueued in the head element */
+
+/* [==========================================] */
+/* [=========== BEGIN GLOBAL STYLES ==========] */
+/* [==========================================] */
+
+html {
+    background: #1455C2;
+}
+
+body {
+    font-family: 'geoLight';
+    font-size: 1em;
+    color: #383838;
+}
+
+/* begin alterantive colr schemes (nightmode, user choices, etc.) */
+.nightMode {
+    background: black;
+}
+/* end alterantive colr schemes (nightmode, user choices, etc.) */
+
+button:focus {
+    outline: none;
+}
+
+.splash {
+    color: #1455C2;
+}
+
 
 .content-container {
     margin: 0em 4em 0em 4em;
@@ -77,12 +94,9 @@ header {
     margin: auto;
     position: fixed;
     top: 0;
-    /* height: 5em; */
-    opacity: 0.9;
     z-index: 1;
     transition-duration: .2s;
     transition-delay: 0.1s;
-    /* border-bottom: 3px solid lightblue; */
 }
 
 .expandBorder {
@@ -92,7 +106,7 @@ header {
     margin-top: 0;
     border-top: 1px solid black;
     transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
     transition-delay: 0.1s;
 }
 
@@ -114,7 +128,7 @@ header {
 
 .navbar {
     background: white;
-    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: ease; */
 }
 
 .navbar-brand {
@@ -132,6 +146,7 @@ header {
 }
 
 .collapsing {
+    transition: ease;
     -webkit-transition-duration: 0.15s;
     transition-duration: 0.15s;
 }
@@ -146,7 +161,7 @@ header {
     opacity: 0.95;
     height: 100vh;
     transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
     transition-delay: 0.1s;
 }
 
@@ -164,7 +179,7 @@ header {
 
 .socialIconButton:hover {
     transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
     color: white;
 }
 
@@ -173,7 +188,7 @@ header {
     color: white;
     background: #1455C2;
     transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
 }
 
 #left {
@@ -205,6 +220,9 @@ header {
     background: none;
     border: none;
 }
+/* [==========================================] */
+/* [============ END GLOBAL STYLES ===========] */
+/* [==========================================] */
 
 /* contact form here */
 
@@ -219,8 +237,9 @@ header {
 }
 
 .test {
+    padding-top: 5em;
     font-family: 'geoExLight';
-    color: lightgrey;
+    color: #383838;
 }
 
 #testText {

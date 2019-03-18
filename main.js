@@ -42,7 +42,7 @@ console.log('all good so far');
 
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll >= 90) {
+    if (scroll >= 60) {
         $(".expandBorder").css("width", "100%");
     } else {
         // $(".expandBorder").css("width", "0%"); // i may end up removing this and allowing the border to stick past scroll point
