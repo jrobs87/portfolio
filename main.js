@@ -26,10 +26,13 @@ $(document).ready(function () {
                     navbar.addClass("scrollUp");
                     $('#right').css("right", "-4em");
                     $('#left').css("left", "-4em");
+                    $('#reminder-top').css("top", "0em");
+                    
                 } else if (c > currentScrollTop && !(a <= b)) {
                     navbar.removeClass("scrollUp");
                     $('#right').css("right", "0em");
                     $('#left').css("left", "0em");
+                    $('#reminder-top').css("display", "none");
                 }
                 c = currentScrollTop;
             })

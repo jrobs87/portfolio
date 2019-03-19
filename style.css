@@ -1,4 +1,5 @@
 /* BEGIN IMPORTED FONTS VIA @FONT-FACE */
+
 @font-face {
     font-family: geoLight;
     src: url('geomanist-light-webfont.woff');
@@ -18,9 +19,11 @@
     font-family: geoExLight;
     src: url('geomanist-extralight-webfont.woff');
 }
+
 /* END IMPORTED FONTS VIA @FONT-FACE */
 
 /* begin loader - note this element loads first in the dom and jquery is enqueued in the head element */
+
 #loader {
     z-index: 20;
     position: fixed;
@@ -44,14 +47,37 @@
     margin-left: .1em;
     margin-right: .1em;
 }
+
 /* end loader - note this element loads first in the dom and jquery is enqueued in the head element */
 
+#reminder-top {
+    width: 100%;
+    text-align: center;
+    background: white;
+    opacity: 1;
+    position: fixed;
+    z-index: 1;
+    top: -3em;
+    font-size: 1em;
+    padding: 0.5em;
+    transition: ease;
+    transition-delay: 1.3s;
+    transition-duration: 1.6s;
+}
+
+#reminder-top-content {
+    color: #1455C2;
+}
+
 /* [==========================================] */
+
 /* [=========== BEGIN GLOBAL STYLES ==========] */
+
 /* [==========================================] */
 
 html {
     background: #1455C2;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -61,9 +87,11 @@ body {
 }
 
 /* begin alterantive colr schemes (nightmode, user choices, etc.) */
+
 .nightMode {
     background: black;
 }
+
 /* end alterantive colr schemes (nightmode, user choices, etc.) */
 
 button:focus {
@@ -73,7 +101,6 @@ button:focus {
 .splash {
     color: #1455C2;
 }
-
 
 .content-container {
     margin: 0em 4em 0em 4em;
@@ -104,7 +131,7 @@ header {
     margin: auto;
     width: 0%;
     margin-top: 0;
-    border-top: 1px solid black;
+    border-top: 1.5px solid black;
     transition-duration: 0.4s;
     transition-timing-function: ease;
     transition-delay: 0.1s;
@@ -128,7 +155,6 @@ header {
 
 .navbar {
     background: white;
-    /* transition-timing-function: ease; */
 }
 
 .navbar-brand {
@@ -141,7 +167,6 @@ header {
 }
 
 .nav-link {
-    /* font-family: 'geoMed'; */
     font-size: 1.0em;
 }
 
@@ -220,8 +245,11 @@ header {
     background: none;
     border: none;
 }
+
 /* [==========================================] */
+
 /* [============ END GLOBAL STYLES ===========] */
+
 /* [==========================================] */
 
 /* contact form here */
@@ -237,14 +265,15 @@ header {
 }
 
 .test {
-    padding-top: 5em;
+    padding-top: 10%;
     font-family: 'geoExLight';
     color: #383838;
 }
 
 #testText {
-    font-size: 2em;
+    font-size: 1.6em;
 }
+
 /* [====================] - BEGIN MEDIA QUERIES - [====================] */
 
 /* // Extra small devices (portrait phones, less than 576px)
@@ -252,15 +281,11 @@ header {
 
 // Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {
-   
-}
+@media (min-width: 576px) {}
 
 /* // Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
-    
-}
+@media (min-width: 768px) {}
 
 /* // Large devices (desktops, 992px and up) */
 
@@ -275,18 +300,15 @@ header {
     .content-to-hide {
         display: none;
     }
-
     .sidebar {
         display: none;
     }
-
     .content-container {
         margin: 0em 0em 0em 0em;
         padding: 5em 0 4em 0;
         width: 100%;
         /* height: 100vh; */
     }
-
     #testText {
         font-size: 1.5em;
     }
@@ -304,7 +326,7 @@ header {
 
 .progress-container {
     width: 100%;
-    height: .6em;
+    height: .4em;
     background: none;
     position: fixed;
     bottom: 0;
