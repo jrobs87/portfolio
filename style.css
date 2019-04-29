@@ -76,7 +76,7 @@
 /* [==========================================] */
 
 html {
-    background: #1455C2;
+    background: white;
     scroll-behavior: smooth;
 }
 
@@ -221,6 +221,7 @@ header {
     left: 0;
     top: 0;
     padding-left: 1.2em;
+    background: none;
 }
 
 #right {
@@ -267,13 +268,24 @@ header {
 .test {
     padding-top: 10%;
     font-family: 'geoExLight';
-    color: #383838;
+    color: black;
 }
 
 #testText {
-    font-size: 1.6em;
+    font-size: 1.75em;
 }
 
+
+.contact a {
+    font-family: geoMed;
+    color: black;
+    font-size: 1em;
+}
+
+.contact:hover a {
+    color: black;
+    /* font-size: 2em; */
+}
 /* [====================] - BEGIN MEDIA QUERIES - [====================] */
 
 /* // Extra small devices (portrait phones, less than 576px)
